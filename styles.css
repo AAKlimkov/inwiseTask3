@@ -1,0 +1,60 @@
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.youtube-sidebar {
+  width: 240px;
+  background-color: #fff;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+}
+
+.menu-icon {
+
+}
+
+.youtube-logo {
+
+}
+
+.navigation-items__main li,
+.navigation-items__second li,
+.subscription-items li {
+  padding: 10px 0;
+  border-left: 3px solid transparent;
+}
+
+.navigation-items__main li:hover,
+.navigation-items__second li:hover,
+.subscription-items li:hover {
+  border-left: 3px solid red;
+  cursor: pointer;
+}
+
+.subscription-section h2 {
+  padding-top: 20px;
+  font-size: 1em;
+}
+
+.subscription-items {
+  padding-left: 0;
+}
+
+.settings {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.settings li {
+  list-style: none;
+  padding: 10px 0;
+  border-top: 1px solid #e5e5e5;
+}
