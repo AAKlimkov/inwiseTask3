@@ -7,21 +7,20 @@ body {
 li {
   list-style-type: none;
 }
-
+aside {
+  max-width: 255px;
+}
 .youtube-sidebar {
   width: 240px;
   background-color: #fff;
   height: 100vh;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  padding: 1em;
 }
 
 .menu-icon {
-
 }
 
 .youtube-logo {
-
 }
 
 .navigation-items__main li,
@@ -57,4 +56,8 @@ li {
   list-style: none;
   padding: 10px 0;
   border-top: 1px solid #e5e5e5;
+}
+
+.wrapper {
+  display: flex;
 }
