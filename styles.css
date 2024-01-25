@@ -1,36 +1,82 @@
 body {
   font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+
   margin: 0;
   padding: 0;
 }
-
+* {
+  padding: 0;
+  margin: 0;
+}
 li {
   list-style-type: none;
 }
+
+.wrapper {
+  display: flex;
+  padding-bottom: 40px;
+}
+
 aside {
   max-width: 255px;
-
   padding-left: 30px;
+  color: #c2c2c2;
 }
 .youtube-sidebar {
-  width: 240px;
   background-color: #fff;
-  height: 100vh;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .menu-icon {
+  display: inline;
+  margin-right: 28px;
 }
 
 .youtube-logo {
   padding-top: 30px;
 }
+.navigation-items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 56px;
+}
+
+.navigation-items__main {
+  height: 117px;
+}
+
+.navigation-items__second {
+  margin-top: 59px;
+  height: 363px;
+}
+
+.navigation-items__main,
+.navigation-items__second {
+  display: flex;
+  flex-direction: column;
+  width: 136px;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  justify-content: space-between;
+}
 
 .navigation-items__main li,
 .navigation-items__second li,
 .subscription-items li {
-  padding: 10px 0;
-  border-left: 3px solid transparent;
+  display: flex;
+  align-items: center;
+}
+.navigation-items__main li > svg,
+.navigation-items__second li > svg {
+  margin-right: 15px;
+}
+
+.navigation-items__second li:last-child {
+  margin-left: 4px;
 }
 
 .navigation-items__main li:hover,
@@ -39,28 +85,42 @@ aside {
   border-left: 3px solid red;
   cursor: pointer;
 }
+.subscription-section {
+  margin-top: 59px;
+  width: 159px;
+}
 
 .subscription-section h2 {
-  padding-top: 20px;
-  font-size: 1em;
+  color: #000;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.subscription-items li > img {
+  margin-right: 10px;
 }
 
 .subscription-items {
-  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+  height: 271px;
 }
 
 .settings {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.settings li {
-  list-style: none;
-  padding: 10px 0;
-  border-top: 1px solid #e5e5e5;
-}
-
-.wrapper {
   display: flex;
+  align-items: center;
+  margin-top: 104px;
+}
+.settings > svg {
+  margin-left: 4px;
+  margin-right: 12px;
+}
+.settings span {
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
