@@ -1,0 +1,76 @@
+.content-row {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.row-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.channel-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.channel-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.channel-recommendation {
+    margin-left: 10px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.subscribe-button {
+    margin-left: auto;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.content-carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.content-card {
+    width: 200px; /* Adjust as needed */
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.content-card img {
+    width: 100%;
+    display: block;
+}
+
+.content-info {
+    padding: 10px;
+}
+
+.content-title {
+    font-size: 1em;
+    margin: 0;
+}
+
+.content-views {
+    font-size: 0.8em;
+    color: #666;
+    margin: 5px 0 0;
+}

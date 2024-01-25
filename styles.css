@@ -9,6 +9,8 @@ li {
 }
 aside {
   max-width: 255px;
+
+  padding-left: 30px;
 }
 .youtube-sidebar {
   width: 240px;
@@ -21,6 +23,7 @@ aside {
 }
 
 .youtube-logo {
+  padding-top: 30px;
 }
 
 .navigation-items__main li,
