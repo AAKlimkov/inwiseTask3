@@ -28,14 +28,7 @@ aside {
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.menu-icon {
-  display: inline;
-  margin-right: 28px;
-}
 
-.youtube-logo {
-  padding-top: 30px;
-}
 .navigation-items {
   display: flex;
   flex-direction: column;
