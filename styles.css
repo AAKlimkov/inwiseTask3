@@ -28,7 +28,6 @@ aside {
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-
 .navigation-items {
   display: flex;
   flex-direction: column;
@@ -116,4 +115,14 @@ aside {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.sections-wrapper {
+  width: 100%;
+  padding-left: 45px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 1700px;
+  overflow: hidden;
 }

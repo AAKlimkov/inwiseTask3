@@ -1,5 +1,4 @@
 .carousel-container {
-  max-width: 1000px;
   margin: auto;
   padding: 20px;
   overflow: hidden;
@@ -20,6 +19,13 @@
 
 .profile-name {
   font-weight: bold;
+  color: #19202c;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-left: 12px;
 }
 
 .carousel {
