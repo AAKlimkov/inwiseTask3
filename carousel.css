@@ -30,14 +30,19 @@
 
 .carousel {
   display: flex;
-  overflow-x: auto;
+  overflow: hidden;
+  padding-top: 10px;
+  gap: 20px;
 }
 
 .card {
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-basis: 250px;
   margin-right: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .card img {
@@ -48,10 +53,31 @@
 
 .content-title {
   display: block;
-  padding: 5px;
+  padding-top: 10px;
+  color: #19202c;
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.content-duration {
-  display: block;
-  padding: 5;
+.content-profile__info {
+  display: flex;
+  margin-top: 5px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #c2c2c2;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.views-count {
+  margin-left: 3px;
+}
+
+.views-count::before {
+  content: "• ";
 }

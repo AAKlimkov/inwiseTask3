@@ -123,6 +123,6 @@ aside {
   padding-top: 10px;
   display: flex;
   flex-direction: column;
-  min-width: 1700px;
+  max-width: 1700px;
   overflow: hidden;
 }
