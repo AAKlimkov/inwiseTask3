@@ -7,7 +7,12 @@
 .profile-section {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 20px;
+}
+.profile-section-info{
+  display: flex;
+  align-items: center;
 }
 
 .profile-image {
