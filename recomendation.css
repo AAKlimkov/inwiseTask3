@@ -1,5 +1,5 @@
 .recommendation-section {
-  margin-top: 27px;
+  margin-top: 30px;
   padding-left: 20px;
   overflow: hidden;
 }
@@ -43,4 +43,11 @@
 .content-duration {
   font-size: 0.8em;
   margin: 0;
+}
+.recommendation-header {
+  display: flex;
+  justify-content: space-between;
+}
+.recommendation-header svg {
+  margin-right: 10%;
 }

@@ -1,37 +1,59 @@
+/* Global Styles */
 body {
   font-family: "Mulish", sans-serif;
   font-size: 1rem;
-
   margin: 0;
   padding: 0;
 }
+
 * {
   padding: 0;
   margin: 0;
 }
+
 li {
   list-style-type: none;
 }
 
+/* Layout and Structure */
 .wrapper {
   display: flex;
   padding-bottom: 40px;
 }
 
+.sections-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 0 45px;
+  max-width: 1700px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Sidebar Styling */
 aside {
   max-width: 255px;
   padding-left: 30px;
   color: #c2c2c2;
 }
+
 .youtube-sidebar {
   background-color: #fff;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .navigation-items {
   display: flex;
   flex-direction: column;
-  margin-top: 56px;
+  margin-top: 30px;
+}
+
+.navigation-items__main,
+.navigation-items__second {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 136px;
+  font-weight: 400;
 }
 
 .navigation-items__main {
@@ -43,27 +65,13 @@ aside {
   height: 363px;
 }
 
-.navigation-items__main,
-.navigation-items__second {
-  display: flex;
-  flex-direction: column;
-  width: 136px;
-
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
-  justify-content: space-between;
-}
-
-.navigation-items__main li,
-.navigation-items__second li,
-.subscription-items li {
+/* Navigation Items Styling */
+.navigation-items li {
   display: flex;
   align-items: center;
 }
-.navigation-items__main li > svg,
-.navigation-items__second li > svg {
+
+.navigation-items li > svg {
   margin-right: 15px;
 }
 
@@ -71,12 +79,12 @@ aside {
   margin-left: 4px;
 }
 
-.navigation-items__main li:hover,
-.navigation-items__second li:hover,
-.subscription-items li:hover {
+.navigation-items li:hover {
   border-left: 3px solid red;
   cursor: pointer;
 }
+
+/* Subscription Section Styling */
 .subscription-section {
   margin-top: 59px;
   width: 159px;
@@ -85,13 +93,7 @@ aside {
 .subscription-section h2 {
   color: #000;
   font-size: 1.125rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-}
-
-.subscription-items li > img {
-  margin-right: 10px;
 }
 
 .subscription-items {
@@ -102,27 +104,28 @@ aside {
   height: 271px;
 }
 
+.subscription-items li {
+  display: flex;
+  align-items: center;
+}
+
+.subscription-items li > img {
+  margin-right: 10px;
+}
+
+/* Settings Section Styling */
 .settings {
   display: flex;
   align-items: center;
   margin-top: 104px;
 }
+
 .settings > svg {
   margin-left: 4px;
   margin-right: 12px;
 }
-.settings span {
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 
-.sections-wrapper {
-  width: 100%;
-  padding-left: 45px;
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  max-width: 1700px;
-  overflow: hidden;
+/* Profile Section Styling */
+.profile-section svg {
+  margin-right: 10%;
 }

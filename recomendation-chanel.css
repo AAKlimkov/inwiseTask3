@@ -4,7 +4,7 @@
   margin-top: 48px;
 }
 
-.row-header {
+.recomendation-chanel-header {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -25,22 +25,15 @@
 .channel-title {
   margin-left: 12px;
   color: #19202c;
-
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 .channel-recommendation {
-  margin-top: 5px;
-  margin-left: 20px;
+  margin: 5px 20px 0;
   color: #c2c2c2;
-
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .subscribe-button {
@@ -54,26 +47,24 @@
 
 .content-carousel {
   display: flex;
-  overflow-x: auto;
+  overflow: hidden;
   margin-top: 30px;
   gap: 30px;
-  overflow: hidden;
 }
 
 .content-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   flex-shrink: 0;
   flex-basis: 250px;
-  overflow: hidden;
   margin-right: 10px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
 }
 
 .content-card img {
   width: 100%;
-  display: block;
 }
 
 .content-info {
@@ -88,12 +79,22 @@
 .content-views {
   font-size: 0.8em;
   color: #666;
-  margin: 5px 0 0;
+  margin-top: 5px;
 }
-.conrol-pannel {
+
+/* Control Panel Styling */
+.control-panel {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   margin-right: 10%;
   width: 260px;
-  align-items: flex-end;
+}
+.creator {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.views-count {
+  white-space: nowrap;
+  overflow: hidden;
 }
