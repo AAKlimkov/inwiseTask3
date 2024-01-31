@@ -1,0 +1,85 @@
+@import "variables";
+@import "mixins";
+
+// Sidebar Styling
+aside {
+  max-width: @sidebar-max-width;
+  padding-left: @padding-big;
+  color: @secondary-color;
+}
+
+.navigation-items {
+  .flex-display(column,flex-start, stretch);
+  margin-top: @margin-big;
+
+  &__main,
+  &__second {
+    .flex-display(column, space-between, stretch);
+    width: @navigation-item-width;
+    font-weight: 400;
+  }
+
+  &__main {
+    height: 117px;
+  }
+
+  &__second {
+    margin-top: 59px;
+    height: 363px;
+  }
+}
+
+.navigation-items li {
+  .flex-display(row, flex-start, center);
+}
+
+.navigation-items li > svg {
+  margin-right: 15px;
+}
+
+.navigation-items__second li:last-child {
+  margin-left: 4px;
+}
+
+.navigation-items li:hover {
+  cursor: pointer;
+}
+
+.subscription-section {
+  margin-top: 59px;
+  width: @subscription-width;
+
+  h2 {
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+}
+
+.subscription-items {
+  .flex-display(column, space-between, stretch);
+  margin-top: @margin-big;
+  height: 271px;
+}
+
+.subscription-items li {
+  .flex-display();
+}
+
+.subscription-items li > img {
+  margin-right: @margin-small;
+}
+
+.settings {
+  .flex-display();
+  margin-top: 104px;
+
+  > svg {
+    margin-left: 4px;
+    margin-right: 12px;
+  }
+}
+
+.profile-section svg {
+  margin-right: 9%;
+}
