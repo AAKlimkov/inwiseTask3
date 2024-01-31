@@ -12,6 +12,10 @@ body {
   font-size: 1rem;
   margin: 0;
   padding: 0;
+  @media (max-width: 640px) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 * {
@@ -26,6 +30,11 @@ li {
 .wrapper {
   .flex-display(row, flex-start, flex-start);
   padding-bottom: 40px;
+  @media (max-width: 640px) {
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: column;
+  }
 }
 
 .sections-wrapper {
@@ -34,4 +43,8 @@ li {
   // max-width: 1700px;
   width: 100%;
   overflow: hidden;
+  @media (max-width: 640px) {
+    padding-left: 0;
+    align-items: center;
+  }
 }
