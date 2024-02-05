@@ -5,6 +5,7 @@
 @import "css/header";
 @import "css/channel-info.less";
 @import "css/video.less";
+@import "css/profile-video.less";
 
 body {
   font-family: @font-family;
@@ -39,12 +40,15 @@ li {
 .sections-wrapper {
   .flex-display(column, flex-start, stretch);
   padding-left: 66px;
-  padding-right: 70px;
+
   padding-top: 10px;
   width: 100%;
   overflow: hidden;
   @media (max-width: 640px) {
     padding-left: 0;
     align-items: center;
+  }
+  > *:not(:last-child) {
+    padding-right: 70px;
   }
 }
