@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import "../css/mixins";
+@import "../css/variables";
 
 .carousel-container {
   margin-top: 35px;
@@ -42,7 +42,8 @@
   gap: 20px;
   @media (max-width: 640px) {
     .flex-display(column, space-between, flex-end);
-    padding-top: 12px;
+    padding-top: 21px;
+    > *:nth-last-child(3),
     > *:nth-last-child(2),
     > *:last-child {
       display: none;
@@ -61,6 +62,7 @@
   @media (max-width: 640px) {
     flex: 0;
     margin-bottom: @margin-small;
+    margin-right: 0;
   }
 
   img {

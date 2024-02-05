@@ -1,11 +1,14 @@
-@import "variables";
-@import "mixins";
-
+@import "../css/mixins";
+@import "../css/variables";
 .video-section {
   .flex-display(row, space-between, flex-start);
 
   margin-top: 60px;
   width: 100%;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
 }
 .video-all {
   .flex-display(row, flex-start, flex-start);

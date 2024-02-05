@@ -1,11 +1,11 @@
 @import "css/variables";
 @import "css/mixins";
 
-@import "css/aside";
-@import "css/header";
-@import "css/channel-info.less";
-@import "css/video.less";
-@import "css/profile-video.less";
+@import "channel/aside";
+@import "channel/header";
+@import "channel/channel-info.less";
+@import "channel/video.less";
+@import "channel/profile-video.less";
 
 body {
   font-family: @font-family;
@@ -31,8 +31,6 @@ li {
   .flex-display(row, flex-start, flex-start);
   padding-bottom: 40px;
   @media (max-width: 640px) {
-    padding-left: 16px;
-    padding-right: 16px;
     flex-direction: column;
   }
 }
@@ -47,8 +45,14 @@ li {
   @media (max-width: 640px) {
     padding-left: 0;
     align-items: center;
+    padding-right: 0;
   }
   > *:not(:last-child) {
     padding-right: 70px;
+
+    @media (max-width: 640px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
