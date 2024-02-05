@@ -1,11 +1,10 @@
-@import "variables";
-@import "mixins";
+@import "css/variables";
+@import "css/mixins";
 
-@import "aside";
-@import "header";
-@import "profile";
-@import "recomendation";
-@import "recomendation-chanel";
+@import "css/aside";
+@import "css/header";
+@import "css/channel-info.less";
+@import "css/video.less";
 
 body {
   font-family: @font-family;
@@ -39,8 +38,9 @@ li {
 
 .sections-wrapper {
   .flex-display(column, flex-start, stretch);
-  padding-left: 45px;
-  // max-width: 1700px;
+  padding-left: 66px;
+  padding-right: 70px;
+  padding-top: 10px;
   width: 100%;
   overflow: hidden;
   @media (max-width: 640px) {
