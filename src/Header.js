@@ -72,9 +72,7 @@ function Header() {
           </button>
         </div>
         <div className="icons">
-          <div className="icons-btn">
-            <img src="./assets/Icons/Header_icons.png" alt="Header_icons" />
-          </div>
+          <div className="icons-btn"></div>
           <div className="profile-icon" />
         </div>
       </div>

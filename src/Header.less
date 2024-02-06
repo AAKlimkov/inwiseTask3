@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import "../css/variables";
+@import "../css/mixins";
 
 header {
   .flex-display(row, space-between);
@@ -124,6 +124,11 @@ header {
   border: none;
   font-size: @font-large;
   cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 175px;
+  background-image: url(../assets/Icons/Icons.png);
+
   @media (max-width: 900px) {
     display: none;
   }
@@ -136,7 +141,7 @@ header {
   margin-left: 45px;
   background-size: cover;
   background-position: center;
-  background-image: url(./assets/Userpic.png);
+  background-image: url(../assets/Userpic.png);
 
   @media (max-width: 640px) {
     height: 30px;
