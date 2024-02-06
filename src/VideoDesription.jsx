@@ -7,7 +7,7 @@ import more from "./assets/Player/more.svg";
 function VideoDescription() {
   return (
     <div>
-      <h2>Dude You Re Getting A Telescope</h2>
+      <h2 className="videoTittleName">Dude You Re Getting A Telescope</h2>
       <div className="videoProperties">
         <span className="views-amount">123k views</span>
         <p className="views-info">

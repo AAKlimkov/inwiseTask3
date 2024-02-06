@@ -2,7 +2,7 @@ import "./contentArrayItem.less";
 
 const ContentArrayItem = ({ data }) => {
   return (
-    <div>
+    <div className="card">
       <img src={data.img} alt={data.name} />
       <h3 className="videoTittle">{data.name}</h3>
       <p className="videoInfo">

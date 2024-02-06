@@ -24,11 +24,17 @@
   display: flex;
   flex-direction: column;
   margin-left: 5px;
+  @media (max-width: 640px) {
+    display: none;
+  }
 }
 .channelName {
   margin-top: 0;
   font-size: 26px;
   font-weight: 700;
+  @media (max-width: 640px) {
+    font-size: 20px;
+  }
 }
 
 .published {

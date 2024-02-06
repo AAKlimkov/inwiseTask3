@@ -4,4 +4,10 @@
   gap: 18px;
   margin-top: 25px;
   overflow: hidden;
+  @media (max-width: 640px) {
+    > *:nth-last-child(2),
+    > *:last-child {
+      display: none;
+    }
+  }
 }
