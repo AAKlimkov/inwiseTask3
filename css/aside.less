@@ -1,0 +1,130 @@
+@import "variables";
+@import "mixins";
+
+aside {
+  max-width: @sidebar-max-width;
+  padding-left: @padding-big;
+  color: @secondary-color;
+
+  @media (max-width: 640px) {
+    order: 2;
+    font-size: @font-extrasmall;
+    padding-left: 0;
+  }
+}
+
+.navigation-items {
+  .flex-display(column,flex-start, stretch);
+  margin-top: @margin-big;
+  @media (max-width: 640px) {
+    width: 288px;
+    .flex-display(row,space-between, stretch);
+    margin-top: 17px;
+  }
+
+  &__main,
+  &__second {
+    .flex-display(column, space-between, stretch);
+    width: @navigation-item-width;
+    font-weight: 400;
+    @media (max-width: 640px) {
+      flex-direction: row;
+    }
+  }
+
+  &__main {
+    height: 117px;
+    @media (max-width: 640px) {
+      height: 38px;
+      flex-grow: 1;
+      padding-right: 32px;
+      padding-left: 8px;
+    }
+  }
+
+  &__second {
+    margin-top: 59px;
+    height: 363px;
+    @media (max-width: 640px) {
+      margin-top: 0;
+      height: 35px;
+      width: 35px;
+    }
+  }
+}
+
+.navigation-items__second {
+  > *:not(:first-child) {
+    @media (max-width: 640px) {
+      display: none;
+    }
+  }
+}
+
+.navigation-items li {
+  .flex-display(row, flex-start, center);
+  @media (max-width: 640px) {
+    .flex-display(column, flex-end, center);
+  }
+}
+
+.navigation-items li > svg {
+  margin-right: 15px;
+  @media (max-width: 640px) {
+    height: 20px;
+    margin-right: 0;
+  }
+}
+
+.navigation-items__second li:last-child {
+  margin-left: 4px;
+}
+
+.navigation-items li:hover {
+  cursor: pointer;
+}
+
+.subscription-section {
+  margin-top: 59px;
+  width: @subscription-width;
+
+  h2 {
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.subscription-items {
+  .flex-display(column, space-between, stretch);
+  margin-top: @margin-big;
+  height: 271px;
+}
+
+.subscription-items li {
+  .flex-display();
+}
+
+.subscription-items li > img {
+  margin-right: @margin-small;
+}
+
+.settings {
+  .flex-display();
+  margin-top: 104px;
+
+  > svg {
+    margin-left: 4px;
+    margin-right: 12px;
+  }
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.profile-section svg {
+  margin-right: 9%;
+}

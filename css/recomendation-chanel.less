@@ -1,0 +1,79 @@
+@import "variables";
+@import "mixins";
+
+.recomendation-chanel {
+  width: 100%;
+  padding-left: @padding-standard;
+  margin-top: 48px;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.recomendation-chanel-header {
+  .flex-display(row,space-between, flex-end);
+}
+
+.channel-info {
+  .flex-display(start);
+}
+
+.channel-icon {
+  width: @channel-icon-size;
+  height: @channel-icon-size;
+  margin-right: @margin-small;
+}
+
+.channel-title {
+  margin-left: 12px;
+  color: @primary-color;
+  font-size: @font-large;
+  font-weight: 700;
+}
+
+.channel-recommendation {
+  margin: 5px 20px 0;
+  color: @secondary-color;
+  font-size: @font-medium;
+  font-weight: 400;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.subscribe-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: @border-radius-big;
+}
+
+.content-info {
+  padding: @padding-small;
+}
+
+.content-title {
+  font-size: @font-medium;
+  margin: 0;
+}
+
+.content-views {
+  font-size: @font-small;
+  margin-top: 5px;
+}
+
+.control-panel {
+  .flex-display(row, space-between, flex-end);
+  margin-right: 10%;
+  width: @control-panel-width;
+}
+
+.creator,
+.views-count {
+  white-space: nowrap;
+  overflow: hidden;
+}

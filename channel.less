@@ -1,0 +1,58 @@
+@import "css/variables";
+@import "css/mixins";
+
+@import "channel/aside";
+@import "channel/header";
+@import "channel/channel-info.less";
+@import "channel/video.less";
+@import "channel/profile-video.less";
+
+body {
+  font-family: @font-family;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  @media (max-width: 640px) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  .flex-display(row, flex-start, flex-start);
+  padding-bottom: 40px;
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
+}
+
+.sections-wrapper {
+  .flex-display(column, flex-start, stretch);
+  padding-left: 66px;
+
+  padding-top: 10px;
+  width: 100%;
+  overflow: hidden;
+  @media (max-width: 640px) {
+    padding-left: 0;
+    align-items: center;
+    padding-right: 0;
+  }
+  > *:not(:last-child) {
+    padding-right: 70px;
+
+    @media (max-width: 640px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

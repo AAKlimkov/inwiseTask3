@@ -1,0 +1,49 @@
+@import "css/variables";
+@import "css/mixins";
+
+@import "css/aside";
+@import "css/header";
+@import "css/profile";
+@import "css/recomendation";
+@import "css/recomendation-chanel";
+
+body {
+  font-family: @font-family;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  @media (max-width: 640px) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  .flex-display(row, flex-start, flex-start);
+  padding-bottom: 40px;
+  @media (max-width: 640px) {
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: column;
+  }
+}
+
+.sections-wrapper {
+  .flex-display(column, flex-start, stretch);
+  padding-left: 45px;
+  width: 100%;
+  overflow: hidden;
+  @media (max-width: 640px) {
+    padding-left: 0;
+    align-items: center;
+  }
+}

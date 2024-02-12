@@ -1,0 +1,43 @@
+.videoProperties {
+  max-width: 1364px;
+
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 640px) {
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 16px;
+  }
+}
+.views-amount {
+  font-size: 20px;
+  @media (max-width: 640px) {
+    color: #c2c2c2;
+    font-size: 12px;
+  }
+}
+.views-info {
+  max-width: 365px;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 640px) {
+    margin-top: 30px;
+    > *:last-child {
+      display: none;
+    }
+  }
+}
+.videoTittleName {
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: 700;
+  @media (max-width: 640px) {
+    width: 210px;
+    margin-top: 15px;
+    margin-left: 16px;
+    font-size: 20px;
+  }
+}

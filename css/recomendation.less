@@ -1,0 +1,55 @@
+@import "variables";
+@import "mixins";
+
+.recommendation-section {
+  margin-top: 50px;
+  padding-left: @padding-standard;
+  overflow: hidden;
+  
+  @media (max-width: 640px) {
+    display: none;
+  }
+
+  h2 {
+    color: @primary-color;
+    font-size: @font-large;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .recommendation-carousel {
+    .flex-display();
+    margin-top: @margin-big;
+    overflow-x: auto;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  .recomendation-content-card {
+    margin-right: @margin-standard;
+    border-radius: @border-radius-normal;
+    flex-shrink: 0;
+    flex-basis: @content-card-width;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .content-card img {
+    width: 100%;
+    display: block;
+  }
+
+  .content-title {
+    font-size: @font-medium;
+    margin: 0;
+  }
+
+  .recommendation-header {
+    .flex-display(row,space-between, flex-end);
+
+    svg {
+      margin-right: 9%;
+    }
+  }
+}

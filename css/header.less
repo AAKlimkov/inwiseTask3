@@ -1,0 +1,146 @@
+@import "variables";
+@import "mixins";
+
+header {
+  .flex-display(row, space-between);
+  height: @header-height;
+  @media (max-width: 640px) {
+    padding: 0 16px;
+    height: 48px;
+  }
+}
+
+.youtube-logo {
+  .flex-display();
+  padding-left: 16px;
+  @media (max-width: 640px) {
+    padding-left: 0;
+  }
+}
+
+.menu-icon {
+  .flex-display(row, center);
+  width: @menu-icon-width;
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.logo-main {
+  .flex-display();
+  width: @logo-main-width;
+  margin-right: @logo-main-margin-right;
+  margin-left: @margin-small;
+
+  @media (max-width: 640px) {
+    margin-left: 0;
+  }
+
+  &:first-child {
+    margin-right: 4px;
+  }
+  svg {
+    @media (max-width: 640px) {
+      margin-right: 4px;
+    }
+  }
+}
+
+.search-group {
+  .flex-display();
+  max-width: @search-max-width;
+  width: 100%;
+  @media (max-width: 640px) {
+    justify-content: space-around;
+  }
+}
+
+.search-wrapper {
+  .flex-display();
+  width: 100%;
+  justify-content: space-between;
+}
+
+.top-nav {
+  .flex-display(space-between);
+  padding: @padding-small;
+}
+
+.search-box {
+  height: @search-box-height;
+  border: none;
+  flex-grow: 1;
+  border-radius: 22px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  opacity: 0.3;
+  background: #ebebeb;
+  @media (max-width: 640px) {
+    display: none;
+  }
+
+  &::placeholder {
+    vertical-align: middle;
+    padding-left: 23px;
+    color: #30384c;
+    font-size: @font-medium;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.search-icon {
+  border-top-right-radius: @border-radius-full;
+  border-bottom-right-radius: @border-radius-full;
+  border: none;
+  opacity: 1;
+  background: #ebebeb;
+  padding-right: 15px;
+  height: 40px;
+  @media (max-width: 640px) {
+    background: #fff;
+    padding-right: 0;
+  }
+}
+.search-icon  > svg{
+  margin-left: 5px;
+}
+.icons {
+  .flex-display(row, space-between, normal);
+  margin-right: 70px;
+
+  @media (max-width: 900px) {
+    margin-right: 40px;
+  }
+  @media (max-width: 640px) {
+    margin-right: 0;
+  }
+}
+
+.icons-btn {
+  .flex-display(row, space-between);
+  background: none;
+  border: none;
+  font-size: @font-large;
+  cursor: pointer;
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.profile-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: @border-radius-full;
+  margin-left: 45px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./assets/Userpic.png);
+
+  @media (max-width: 640px) {
+    height: 30px;
+    width: 30px;
+    margin-left: 0px;
+  }
+}

@@ -3,15 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="normolize.css" />
-    <link rel="stylesheet/less" type="text/css" href="mainPage.less" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet/less" type="text/css" href="channel.less" />
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
-    <title>Youtube Clone</title>
+    <title>Channel</title>
   </head>
   <body>
     <header>
@@ -48,6 +42,7 @@
             />
           </svg>
           <svg
+          class="youtobeText"
             xmlns="http://www.w3.org/2000/svg"
             width="75"
             height="24"
@@ -61,6 +56,7 @@
               fill="black"
             />
           </svg>
+          <p class="youtobeTextMob">Margaret Phelps</p>
         </div>
       </div>
 
@@ -90,10 +86,10 @@
             <img src="./assets/Icons/Header_icons.png" alt="Header_icons" />
           </div>
           <div class="profile-icon"></div>
+          <div class="burger"></div>
         </div>
       </div>
     </header>
-
     <main class="wrapper">
       <aside>
         <nav class="youtube-sidebar">
@@ -342,15 +338,132 @@
       </aside>
       <div class="sections-wrapper">
         <section>
+          <div class="bgimage"></div>
+        </section>
+        <section class="channel">
+          <div class="channel-header">
+            <span class="channel-info">
+              <img
+                src="./assets/channel/Margaret Phelps.png"
+                alt="Margaret Phelps"
+                class="channel-icon"
+              />
+              <div class="channel-subscriptions">
+                <h2 class="channel-title">Margaret Phelps</h2>
+                <p class="channel-recommendation">245k subscribed</p>
+              </div>
+            </span>
+            <span class="control-panel">
+              <svg
+                width="22"
+                height="26"
+                viewBox="0 0 22 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.24"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.66927 22.4545C1.64382 22.4545 0 20.8655 0 18.9091C0 17.6106 0.727122 16.4532 1.83849 15.835C1.83849 15.4764 1.83333 11.2256 1.83333 11.2256C1.83333 7.14185 4.66852 3.70365 8.55556 2.6765V2.36364C8.55556 1.05824 9.64997 0 11 0C12.35 0 13.4444 1.05824 13.4444 2.36364V2.6765C17.3323 3.70344 20.1667 7.14194 20.1667 11.2318V15.8454C21.2793 16.4664 22 17.619 22 18.9091C22 20.8681 20.3586 22.4545 18.3307 22.4545H14.6667C14.6646 24.413 13.0197 26 11 26C8.97496 26 7.33333 24.4143 7.33333 22.4571L3.66927 22.4545ZM9.77778 22.4545C9.77778 23.1083 10.3244 23.6364 11 23.6364C11.6709 23.6364 12.2201 23.1064 12.2222 22.4545H9.77778ZM17.7222 11.2318V16.9427C17.7222 17.2702 17.9922 17.6032 18.3181 17.6847L18.6385 17.7648C19.1733 17.8984 19.5556 18.3689 19.5556 18.9091C19.5556 19.5624 19.0088 20.0909 18.3307 20.0909H3.66927C2.99369 20.0909 2.44444 19.56 2.44444 18.9091C2.44444 18.3666 2.82517 17.8979 3.36026 17.7647L3.69151 17.6823C4.0153 17.6017 4.27778 17.2732 4.27778 16.9426V11.2256C4.27778 7.63639 7.28675 4.72727 11 4.72727C14.7148 4.72727 17.7222 7.63541 17.7222 11.2318Z"
+                  fill="black"
+                />
+              </svg>
+
+              <button class="subscribe-button">Subscribe 2.3M</button>
+            </span>
+          </div>
+          <div class="channel-description">
+            <div class="channel-main">
+              <nav class="channel-nav">
+                <ul>
+                  <li><a class="selected" href="#">Home</a></li>
+                  <li><a href="#">Videos</a></li>
+                  <li><a href="#">Playlists</a></li>
+                  <li><a href="#"><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.7624 0.798368L9.28113 0.263702C9.11428 0.0879298 8.91953 0 8.69714 0C8.47025 0 8.27771 0.0879298 8.11937 0.263702L5 3.72814L1.88063 0.263789C1.72229 0.0880173 1.52975 8.74923e-05 1.30294 8.74923e-05C1.08047 8.74923e-05 0.885722 0.0880173 0.718866 0.263789L0.243902 0.798455C0.0813008 0.978952 0 1.19523 0 1.44712C0 1.70374 0.0813796 1.91757 0.243902 2.08862L4.42231 6.72912C4.5764 6.90971 4.76886 7 5 7C5.22681 7 5.42147 6.90971 5.58399 6.72912L9.7624 2.08862C9.92075 1.91276 10 1.69893 10 1.44712C10 1.19996 9.92075 0.983764 9.7624 0.798368Z" fill="black"/>
+</svg>
+</a></li>
+                  <li><a href="#">Channel</a></li>
+                  <li><a href="#">Discussion</a></li>
+                  <li><a href="#">About</a></li>
+                  <li>
+                    <a href="#">
+                      <svg
+                        width="19"
+                        height="19"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M17.9005 16.4865L14.3205 12.9065L14.3195 12.9055C16.9095 9.569 16.4594 4.79387 13.2916 2.00007C10.1238 -0.793727 5.32983 -0.643497 2.34317 2.34317C-0.643497 5.32983 -0.793727 10.1238 2.00007 13.2916C4.79387 16.4594 9.569 16.9095 12.9055 14.3195L16.4855 17.8995C16.7364 18.1596 17.1081 18.2642 17.4578 18.1729C17.8075 18.0816 18.0808 17.8088 18.1725 17.4592C18.2643 17.1097 18.1603 16.7378 17.9005 16.4865ZM13.1967 11.0005C12.1249 12.8569 10.1441 14.0005 8.00052 14.0005C4.68681 14.0005 2.00052 11.3142 2.00052 8.00052C2.00052 4.68681 4.68681 2.00052 8.00052 2.00052C10.1441 2.00052 12.1249 3.14411 13.1967 5.00052C14.2685 6.85693 14.2685 9.14411 13.1967 11.0005Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="video-section">
+                <div class="video-all">
+                        <span class="video-img"></span>
+                    <div class="video-info">
+                    <div class="video-description">
+                        <h3 class="video-description__tittle">
+                        Choosing The Best Audio Player Software For Your Computer
+                        </h3>
+                        <div class="video-description__text">
+                        Your cheap internet-based banner advertising will become
+                        one of the sought for ads there are. Today, the world of
+                        Internet advertising is rapidly evolving beyond banner ads
+                        and intrusive pop-ups. Bayles A common medium for
+                        advertising on the Internet is the use of banner ads.
+                        </div>
+
+                        <div class="views-info">
+                            <span class="views-amount">11k views  </span>
+                            <span class="views-count"> 6 mounths ago</span>
+                        </div>
+                     </div>
+                    </div>   
+                </div>
+             
+                    <div class="recommendet-channel">
+                    <div class="recommendet-tittle"> Recommended channel </div>
+                    <nav>
+                        <ul>
+                        <li>
+                        <img
+                                src="./assets/channel/Flora Benson.png"
+                                alt="Flora Benson"
+                            />Flora Benson
+                        </li>
+                        <li>
+                        <img
+                                src="./assets/channel/Violet Cobb.png"
+                                alt="Violet Cobb"
+                            />Violet Cobb
+                        </li>
+                        <li>
+                        <img
+                                src="./assets/channel/Phillip Mullins.png"
+                                alt="Phillip Mullins"
+                            />Phillip Mullins</a
+                            >
+                        </li>
+                        </ul>
+                    </nav>
+                    </div>
+              </div>
+        </section>
+                <section>
           <div class="carousel-container">
             <div class="profile-section">
               <span class="profile-section-info">
-                <img
-                  src="./assets/Dollie Blair.png"
-                  alt="Profile"
-                  class="profile-image"
-                />
-                <span class="profile-name">Dollie Blair</span>
+                <span class="profile-name">Margaret Phelps videos</span>
               </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -385,265 +498,20 @@
             </div>
             <div class="carousel">
               <div class="card">
-                <img src="./assets/Profile/history.png" alt="Creation" />
-                <span class="content-title">A Brief History Of Creation</span>
-                <div class="content-profile__info">
-                  <span class="views-info">
-                    <span class="views-amount">80k views</span>
-                    <span class="views-count">3 days ago</span>
-                  </span>
-                  <span class="creator">Dollie Blair</span>
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="./assets/Profile/selecting hotel.png"
-                  alt="hotel"
-                  width="250px"
-                  height="150px"
-                />
-                <span class="content-title">Selecting The Right Hotel</span>
-                <div class="content-profile__info">
-                  <span class="views-info">
-                    <span class="views-amount">123k views</span>
-                    <span class="views-count">1 mounts ago</span>
-                  </span>
-                  <span class="creator">Dollie Blair</span>
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="./assets/Profile/Asteroids.png"
-                  alt="Asteroids"
-                  width="250px"
-                  height="150px"
-                />
-                <span class="content-title">Asteroids</span>
-                <div class="content-profile__info">
-                  <span class="views-info">
-                    <span class="views-amount">43k views</span>
-                    <span class="views-count">12 days ago</span>
-                  </span>
-                  <span class="creator">Dollie Blair</span>
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="./assets/Profile/Telescopes.png"
-                  alt="Telescopes"
-                  width="250px"
-                  height="150px"
-                />
-                <span class="content-title">Telescopes 101</span>
-                <div class="content-profile__info">
-                  <span class="views-info">
-                    <span class="views-amount">11k views</span>
-                    <span class="views-count">6 mounts ago</span>
-                  </span>
-                  <span class="creator">Dollie Blair</span>
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="./assets/Profile/Medical.png"
-                  alt="Medical"
-                  width="250px"
-                  height="150px"
-                />
-                <span class="content-title">Medical Care Is Just</span>
-                <div class="content-profile__info">
-                  <span class="views-info">
-                    <span class="views-amount">18k views</span>
-                    <span class="views-count">2 days ago</span>
-                  </span>
-                  <span class="creator">Dollie Blair</span>
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="./assets/Profile/moon gazing.png"
-                  alt="Moon gazing"
-                  width="250px"
-                  height="150px"
-                />
-                <span class="content-title">Moon Gazing</span>
-                <div class="content-profile__info">
-                  <span class="views-info">
-                    <span class="views-amount">67k views</span>
-                    <span class="views-count">4 mounth ago</span>
-                  </span>
-                  <span class="creator">Dollie Blair</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="recommendation-section">
-            <div class="recommendation-header">
-              <h2>Recommended</h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="66"
-                height="28"
-                viewBox="0 0 66 28"
-                fill="none"
-              >
-                <path
-                  opacity="0.24"
-                  d="M52 28C59.732 28 66 21.732 66 14C66 6.26801 59.732 0 52 0C44.268 0 38 6.26801 38 14C38 21.732 44.268 28 52 28Z"
-                  fill="black"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M49.9983 8.66611L49.4637 9.20513C49.2879 9.39201 49.2 9.61012 49.2 9.8592C49.2 10.1133 49.2879 10.329 49.4637 10.5063L52.9281 14L49.4637 17.4937C49.288 17.671 49.2 17.8867 49.2 18.1407C49.2 18.3899 49.288 18.608 49.4637 18.7949L49.9984 19.3268C50.1789 19.5089 50.3952 19.6 50.6471 19.6C50.9037 19.6 51.1175 19.5089 51.2886 19.3268L55.9291 14.647C56.1097 14.4744 56.2 14.2589 56.2 14C56.2 13.746 56.1097 13.5279 55.9291 13.3459L51.2886 8.66611C51.1127 8.48876 50.8989 8.4 50.6471 8.4C50.3999 8.4 50.1837 8.48876 49.9983 8.66611Z"
-                  fill="white"
-                />
-                <path
-                  opacity="0.24"
-                  d="M14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28Z"
-                  fill="black"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M16.0017 8.66611L16.5363 9.20513C16.7121 9.39201 16.8 9.61012 16.8 9.8592C16.8 10.1133 16.7121 10.329 16.5363 10.5063L13.0719 14L16.5363 17.4937C16.712 17.671 16.8 17.8867 16.8 18.1407C16.8 18.3899 16.712 18.608 16.5363 18.7949L16.0016 19.3268C15.8211 19.5089 15.6048 19.6 15.3529 19.6C15.0963 19.6 14.8825 19.5089 14.7114 19.3268L10.0709 14.647C9.89034 14.4744 9.80005 14.2589 9.80005 14C9.80005 13.746 9.89034 13.5279 10.0709 13.3459L14.7114 8.66611C14.8873 8.48876 15.1011 8.4 15.3529 8.4C15.6001 8.4 15.8163 8.48876 16.0017 8.66611Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-
-            <div class="recommendation-carousel">
-              <div class="recomendation-content-card">
-                <img
-                  src="./assets/Recomendation/Getting a telescope.png"
-                  alt="Dude You Re Getting A Telescope"
-                  width="540px"
-                  height="250px"
-                />
-                <div class="recoendation-content-info">
-                  <h3 class="content-title">Dude You Re Getting A Telescope</h3>
-                  <div class="content-profile__info">
-                    <span class="views-info">
-                      <span class="views-amount">34k views</span>
-                      <span class="views-count">5 mounts ago</span>
-                    </span>
-                    <span class="creator">Gussie French</span>
-                  </div>
-                </div>
-              </div>
-              <div class="recomendation-content-card">
-                <img
-                  src="./assets/Recomendation/Moon Gazing (2).png"
-                  alt="Moon Gazing"
-                  width="540px"
-                  height="250px"
-                />
-                <div class="recoendation-content-info">
-                  <h3 class="content-title">Moon Gazing</h3>
-                  <div class="content-profile__info">
-                    <span class="views-info">
-                      <span class="views-amount">54k views</span>
-                      <span class="views-count">11 mounts ago</span>
-                    </span>
-                    <span class="creator">Edward Osborne</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="recomendation-content-card">
-                <img
-                  src="./assets/Recomendation/Moon Gazing.png"
-                  alt="Moon Gazing"
-                  width="540px"
-                  height="250px"
-                />
-                <div class="recoendation-content-info">
-                  <h3 class="content-title">Moon Gazing</h3>
-                  <div class="content-profile__info">
-                    <span class="views-info">
-                      <span class="views-amount">125k views</span>
-                      <span class="views-count">4 mounts ago</span>
-                    </span>
-                    <span class="creator">Dollie Blair</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="recomendation-chanel">
-            <div class="recomendation-chanel-header">
-              <span class="channel-info">
-                <img
-                  src="./assets/recomendation-chanel/channel-icon.png"
-                  alt="Food & Drink"
-                  class="channel-icon"
-                />
-                <h2 class="channel-title">Food & Drink</h2>
-                <p class="channel-recommendation">
-                  Recommended channel for you
-                </p></span
-              >
-              <span class="control-panel"
-                ><button class="subscribe-button">Subscribe 2.3M</button>
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="66"
-                    height="28"
-                    viewBox="0 0 66 28"
-                    fill="none"
-                  >
-                    <path
-                      opacity="0.24"
-                      d="M52 28C59.732 28 66 21.732 66 14C66 6.26801 59.732 0 52 0C44.268 0 38 6.26801 38 14C38 21.732 44.268 28 52 28Z"
-                      fill="black"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M49.9983 8.66611L49.4637 9.20513C49.2879 9.39201 49.2 9.61012 49.2 9.8592C49.2 10.1133 49.2879 10.329 49.4637 10.5063L52.9281 14L49.4637 17.4937C49.288 17.671 49.2 17.8867 49.2 18.1407C49.2 18.3899 49.288 18.608 49.4637 18.7949L49.9984 19.3268C50.1789 19.5089 50.3952 19.6 50.6471 19.6C50.9037 19.6 51.1175 19.5089 51.2886 19.3268L55.9291 14.647C56.1097 14.4744 56.2 14.2589 56.2 14C56.2 13.746 56.1097 13.5279 55.9291 13.3459L51.2886 8.66611C51.1127 8.48876 50.8989 8.4 50.6471 8.4C50.3999 8.4 50.1837 8.48876 49.9983 8.66611Z"
-                      fill="white"
-                    />
-                    <path
-                      opacity="0.24"
-                      d="M14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28Z"
-                      fill="black"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.0017 8.66611L16.5363 9.20513C16.7121 9.39201 16.8 9.61012 16.8 9.8592C16.8 10.1133 16.7121 10.329 16.5363 10.5063L13.0719 14L16.5363 17.4937C16.712 17.671 16.8 17.8867 16.8 18.1407C16.8 18.3899 16.712 18.608 16.5363 18.7949L16.0016 19.3268C15.8211 19.5089 15.6048 19.6 15.3529 19.6C15.0963 19.6 14.8825 19.5089 14.7114 19.3268L10.0709 14.647C9.89034 14.4744 9.80005 14.2589 9.80005 14C9.80005 13.746 9.89034 13.5279 10.0709 13.3459L14.7114 8.66611C14.8873 8.48876 15.1011 8.4 15.3529 8.4C15.6001 8.4 15.8163 8.48876 16.0017 8.66611Z"
-                      fill="white"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </div>
-            <div class="carousel">
-              <div class="card">
-                <img
-                  src="./assets/recomendation-chanel/Astronomy Or Astrology.png"
-                  alt="Astronomy or Astrology"
-                  width="250px"
-                  height="150px"
-                />
+                <img src="./assets/channel/Astronomy Or Astrology.png" alt="Creation" />
                 <span class="content-title">Astronomy Or Astrology</span>
                 <div class="content-profile__info">
                   <span class="views-info">
                     <span class="views-amount">240k views</span>
-                    <span class="views-count">4 mounth ago</span>
+                    <span class="views-count">4 mounths ago</span>
                   </span>
                   <span class="creator">Food & Drink</span>
                 </div>
               </div>
               <div class="card">
                 <img
-                  src="./assets/recomendation-chanel/Advertising Outdoors.png"
-                  alt="Advertising Outdoors"
+                  src="./assets/channel/Advertising Outdoors.png"
+                  alt="hotel"
                   width="250px"
                   height="150px"
                 />
@@ -658,8 +526,8 @@
               </div>
               <div class="card">
                 <img
-                  src="./assets/recomendation-chanel/Radio Astronomy.png"
-                  alt="Radio Astronomy"
+                  src="./assets/channel/Radio Astronomy.png"
+                  alt="Asteroids"
                   width="250px"
                   height="150px"
                 />
@@ -674,8 +542,8 @@
               </div>
               <div class="card">
                 <img
-                  src="./assets/recomendation-chanel/A Good Autoresponder.png"
-                  alt="A Good Autoresponder"
+                  src="./assets/channel/A Good Autoresponder.png"
+                  alt="Telescopes"
                   width="250px"
                   height="150px"
                 />
@@ -683,15 +551,15 @@
                 <div class="content-profile__info">
                   <span class="views-info">
                     <span class="views-amount">45k views</span>
-                    <span class="views-count">2 mounths ago</span>
+                    <span class="views-count">2 mounts ago</span>
                   </span>
                   <span class="creator">Food & Drink</span>
                 </div>
               </div>
               <div class="card">
                 <img
-                  src="./assets/recomendation-chanel/Baby Monitor Technology.png"
-                  alt="Baby Monitor Technology"
+                  src="./assets/channel/Baby Monitor Technology.png"
+                  alt="Medical"
                   width="250px"
                   height="150px"
                 />
@@ -706,8 +574,8 @@
               </div>
               <div class="card">
                 <img
-                  src="./assets/recomendation-chanel/Asteroids.png"
-                  alt="Asteroids"
+                  src="./assets/channel/Asteroids.png"
+                  alt="Moon gazing"
                   width="250px"
                   height="150px"
                 />
@@ -715,9 +583,9 @@
                 <div class="content-profile__info">
                   <span class="views-info">
                     <span class="views-amount">123k views</span>
-                    <span class="views-count">4 mounths ago</span>
+                    <span class="views-count">4 mounth ago</span>
                   </span>
-                  <span class="creator">Food & Drink</span>
+                  <span class="creator">Dollie Blair</span>
                 </div>
               </div>
             </div>
