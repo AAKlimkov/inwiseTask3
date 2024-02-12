@@ -1,11 +1,18 @@
 .nextVideos {
   height: 1120px;
-  margin-left: 40px;
+  margin: 0 20px;
   width: 367px;
+  flex-basis: 367px;
+  flex-shrink: 0;
   overflow: hidden;
-  @media (max-width: 1400px) {
-    display: none;
+  @media (max-width: 1200px) {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: visible;
+    justify-content: center;
   }
+
   @media (max-width: 640px) {
     height: 520px;
     display: block;
@@ -17,6 +24,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
   @media (max-width: 640px) {
     margin-left: 16px;
     width: 288px;

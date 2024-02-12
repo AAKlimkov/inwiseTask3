@@ -4,6 +4,13 @@
   gap: 18px;
   margin-top: 25px;
   overflow: hidden;
+  @media (max-width: 1200px) {
+    width: 100%;
+    max-width: 1120px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   @media (max-width: 640px) {
     > *:nth-last-child(2),
     > *:last-child {
